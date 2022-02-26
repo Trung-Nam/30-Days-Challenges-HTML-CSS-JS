@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #f2726a;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(45deg, #00853e, #50c878);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background: #242628;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  overflow:hidden;
+}
+
+.card__img {
+  width: 120px;
+  height: 120px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0px auto;
+  transform: translateY(25px);
+  transition: all 0.5s;
+}
+
+.card__img img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
+.card h2 {
+  color: #fff;
+  margin-top: 25px;
+}
+.card p {
+  color: var(--primary-color);
+}
+.card__social {
+  margin: 25px 0;
+}
+.card__social a {
+  color: #fff;
+  margin: 25px 20px;
+  text-decoration:none;
+}
+.card__social a:hover{
+    color: #f2726a;
+}
+.card__social .fa-brands {
+    font-size: 20px;
+}
+.card button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+}
+.card button:hover {
+  background: #f2726a;
+}
+
+.card__img:hover{
+    width: 100%;
+    height: 100%;
+    border:none;
+    border-radius: unset;
+    transform:unset
+}
