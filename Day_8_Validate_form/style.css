@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #3ca7ee , #9b408f );
+    overflow: hidden;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 400px;
+    border:none;
+    border-radius: 10px;
+    background:#fff;
+    padding:40px;
+}
+.container h1{
+    text-align: center;
+}
+
+.form-control{
+    width: 100%;
+}
+.form-control input{
+    width: 100%;
+}
