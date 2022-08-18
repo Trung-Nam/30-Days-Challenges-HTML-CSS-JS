@@ -1,0 +1,143 @@
+:root {
+  --success-color: rgb(0, 128, 0);
+  --warning-color: rgb(255, 165, 0);
+  --error-color: rgb(255, 0, 0);
+
+  --success-light-color: rgb(0, 128, 0, 0.4);
+  --warning-light-color: rgb(255, 165, 0, 0.4);
+  --error-light-color: rgb(255, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecf0f1;
+}
+
+.control button {
+  padding: 8px 16px;
+  margin: 0 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.success {
+  background: var(--success-color);
+}
+button.success:hover{
+    background-color: rgb(0, 116, 0);
+}
+button.warning {
+  background: var(--warning-color);
+}
+button.warning:hover{
+    background-color: rgb(255, 153, 0);
+}
+button.error {
+  background: var(--error-color);
+}
+button.error:hover{
+    background-color: rgb(242, 0, 0);
+}
+#toasts {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+.toast {
+  padding: 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 26px;
+  overflow: hidden;
+  animation: slideshow 2s ease-in-out forwards;
+}
+
+.toast i {
+  margin: 0 10px;
+}
+
+.toast .countdown {
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  animation: countdown 2s ease;
+}
+
+.toast.success {
+  background: var(--success-light-color);
+  border-left: 6px solid var(--success-color);
+}
+.toast.success .countdown {
+  background: var(--success-color);
+}
+
+.toast.warning {
+  background: var(--warning-light-color);
+  border-left: 6px solid var(--warning-color);
+}
+.toast.warning .countdown {
+  background: var(--warning-color);
+}
+.toast.error {
+  background: var(--error-light-color);
+  border-left: 6px solid var(--error-color);
+}
+.toast.error .countdown {
+  background: var(--error-color);
+}
+@keyframes countdown {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slideshow {
+  0% {
+    transform: translateX(100%);
+  }
+  25% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@keyframes slidehide {
+  0% {
+    transform: translateX(-10%);
+  }
+  25% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
