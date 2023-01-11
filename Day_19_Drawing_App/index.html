@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/animations.min.css"
+        integrity="sha512-GKHaATMc7acW6/GDGVyBhKV3rST+5rMjokVip0uTikmZHhdqFWC7fGBaq6+lf+DOS5BIO8eK6NcyBYUBCHUBXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="tool">
+        <input id="color" type="color">
+        <button id="eraser">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPdJREFUSEvVlOERATEQRp8KKEEHlEAJOqASVGBUQAk6oAQ6UIISzGfcTJxkd3Pmftifmc17yWazA3qOQc98ughGwA64A3vgYR2yVjAFzoAkiiswtyQ1gja8ObgpiQpKcFcSEXhwU+IJovCixBKk8BswBoaBtt4CmyavJFCXqFskEXz2FlwCEuVr3ytyghy86XVt9CQL4FQSWPBmjyVZAce0jOkNInBL8gVvl0gPs05qbo6A90MqX5GFlwTu9weWwMGDtwUqkR5w4syYMDzXRZ6kCm61ae4m1fCSQOvpTQKf9yPl429Zo6KrJCyoPXk235umP0v+X/AEIE9DGaziEgcAAAAASUVORK5CYII="/>
+        </button>
+        <button id="decrease">
+            -
+        </button>
+        <button id="size">
+            20
+        </button>
+        <button id="increase">
+            +
+        </button>
+        <a id="save" download="tenfile.png">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAANJJREFUSEvtlWENwkAMRt8cgAIkABJwgBRQAJKQgARwAArAAaTJlSzd3boCt4SE/btu7bu2X9eGyk9TOT6jA9bADlgEMjsBK+Ce87EZXIBZILh+WoRYwCN5qF3PGsjap8ARmANZyKcA8Z/0QaIAWz31t5ClTVnPXolKALEL5GZK3JGpBUT73fH3SvT7AG/wZG62wCGlGi7RkMET/atqwgCv6SXVvXrrNfkPcAft6yUaohpv+M7tfWKbLLrfp9+vFyj3/gpsWnMx/sp859a9PtWX/hNUrkEZI5OABgAAAABJRU5ErkJggg=="/>
+        </a>
+        <button id="clear">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAP9JREFUSEvFlesRATEURs9WQAeogBLogA6oQAnoQAd0QAeUQAd0oAPmM7kzkdllkuyu/NtJcs59ZJOChkfRMJ9WBWNgB/Qzs7oBC+Asjp+BJnqZcNsu1iAUPGuCG+YdvJ9Ba4LcxluglRn8RbAGtsDDFbgLLIFNSd+iMxB8BVyAiQOegJETaN4f0QJFqzM9dBLBBL8C+ncsK5NEC7TRl+i7Cq65ZIGVRRArVxh9kkDRG1yRa1i51JPsEk2Bg1cWCawnM+CY22Ttl0RQ/5iqwSE8qUSxV1RSk2MklQKl34khfVl7t3fFv3dU030Nb4Lg87IHp6bgPzG5N+fPoBoXvADVUUAZPLLH/wAAAABJRU5ErkJggg=="/>
+        </button>
+    </div>
+    <div class="container">
+        <canvas width="1500" height="800">
+    </div>
+
+    </canvas>
+</body>
+<script src="app.js"></script>
+
+</html>
